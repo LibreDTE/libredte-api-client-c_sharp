@@ -1,0 +1,18 @@
+# Archivos del sistema
+.DS_Store
+libredte/TestResults/
+libredte/.vs/
+libredte/bin/
+libredte/obj/
+libredte/packages/
+libredte/Program.cs
+libredte/nuget.exe
+libredte/libredtecsharp.1.0.0.nupkg
+
+# Archivos de tests
+tests/TestEnv.cs
+tests/readme.txt
+tests/bin/
+tests/obj/
+tests/Connected Services/
+tests/nuget.exe
