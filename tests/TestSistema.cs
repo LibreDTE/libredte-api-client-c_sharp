@@ -13,12 +13,12 @@ namespace tests
     public class TestSistema
     {
         [TestMethod]
-        public void TestGetMonedaCambios()
+        public void TestGetMonedaCambios() // DESCARTAR PRUEBA.
         {
             TestEnv test_env = new TestEnv();
             test_env.SetVariablesDeEntorno();
             Sistema sistema = new Sistema();
-            string moneda = "CLF";
+            string moneda = "CLP";
             string dia = "2023-07-11";
 
 

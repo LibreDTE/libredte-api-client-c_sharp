@@ -42,7 +42,7 @@ Si no se desea usar una variable de entorno, al instanciar los objetos se deber�
     using libredte;
 
     string LIBREDTE_HASH="aquí-tu-hash-de-usuario";
-    var client = libredte.api_client.ApiClient(LIBREDTE_HASH);
+    var client = api_client.utils.ApiClient(LIBREDTE_HASH);
 ```
 
 Si utilizas LibreDTE Edición Comunidad deberás además configurar la URL
@@ -62,7 +62,7 @@ segundo parámetro en el constructor del cliente:
 
     string LIBREDTE_HASH="aquí-tu-hash-de-usuario";
     string LIBREDTE_URL="https://libredte.example.com";
-    var client = libredte.api_client.ApiClient(LIBREDTE_HASH, LIBREDTE_URL);
+    var client = api_client.utils.ApiClient(LIBREDTE_HASH, LIBREDTE_URL);
 
 ```
 

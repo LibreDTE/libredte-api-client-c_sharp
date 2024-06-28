@@ -13,30 +13,53 @@ namespace tests
     public class TestCobros
     {
         [TestMethod]
-        public void TestGetCobros()
+        public void TestGetCobros() // NO PROBAR TODAVÍA!
         {
             TestEnv test_env = new TestEnv();
             test_env.SetVariablesDeEntorno();
             // Variables de entorno definidas desde test_env
             string rut = Environment.GetEnvironmentVariable("TEST_EMISOR_DTE");
-            Dictionary<string, object> cobro = new Dictionary<string, object>(); // ARMAR EL DICCIONARIO
+            Dictionary<string, object> cobro = new Dictionary<string, object>() // CONFIGURAR EL DICCIONARIO
+            {
+                {"codigo", null},
+                {"vencidos", null},
+                {"vencen_hoy", null},
+                {"vigentes", null},
+                {"sin_vencimiento", null},
+                {"dte_emitidos", null},
+                {"receptor", null},
+                {"dte", null},
+                {"folio", null},
+                {"fecha_desde", null},
+                {"fecha_hasta", null},
+                {"pagado", null},
+                {"pagado_desde", null},
+                {"pagado_hasta", null},
+                {"total", null},
+                {"total_desde", null},
+                {"total_hasta", null},
+                {"medio", null},
+                {"sucursal", null}
+            }; // CONFIGURAR EL DICCIONARIO
             Cobros cobros = new Cobros();
 
             try
             {
                 HttpResponseMessage response = cobros.GetCobros(rut, cobro);
                 var jsonResponse = response.Content.ReadAsStringAsync().Result;
-                Trace.WriteLine(jsonResponse.ToString());
-                Dictionary<string, object> resultado = JsonConvert.DeserializeObject<Dictionary<string, object>>(jsonResponse);
+                List<Dictionary<string, object>> resultado = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(jsonResponse);
                 foreach (var informacion in resultado)
                 {
-                    Trace.WriteLine(informacion.ToString());
+                    foreach(var cobroRegistrado in informacion)
+                    {
+                        Trace.WriteLine(cobroRegistrado.ToString());
+                    }
                 }
                 Assert.AreEqual(resultado.Count > 0, true);
             }
             catch (AssertFailedException e)
             {
-                throw new ApiException($"No se ha podido encontrar contribuyente. Error: {e}");
+                throw new ApiException($"No se ha podido encontrar cobros. Error: {e}");
             }
             catch (JsonSerializationException e)
             {
