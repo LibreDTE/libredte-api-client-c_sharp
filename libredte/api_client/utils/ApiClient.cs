@@ -293,7 +293,7 @@ namespace libredte.api_client.utils
             }
             fullUrl = new Uri(this.AddParametersToUrl(fullUrl, extraParams));
 
-            System.Diagnostics.Trace.WriteLine(fullUrl.ToString()); // print del URL completo
+            // System.Diagnostics.Trace.WriteLine(fullUrl.ToString()); // print del URL completo
             if (data != null)
             {
                 try
@@ -322,24 +322,24 @@ namespace libredte.api_client.utils
             try
             {
                 var response = this.httpClient.SendAsync(request).Result;
-                System.Diagnostics.Trace.WriteLine(response.ToString()); // print de la respuesta completa
+                //System.Diagnostics.Trace.WriteLine(response.ToString()); // print de la respuesta completa
                 HttpResponseMessage resp = this.CheckAndReturnResponse(response);
-                System.Diagnostics.Trace.WriteLine(resp.ToString());
+                //System.Diagnostics.Trace.WriteLine(resp.ToString());
                 return resp;
             }
             catch (HttpRequestException e)
             {
-                System.Diagnostics.Trace.WriteLine($"Error en la solicitud: {e}");
+                //System.Diagnostics.Trace.WriteLine($"Error en la solicitud: {e}");
                 throw new ApiException($"Error en la solicitud: {e}");
             }
             catch (TimeoutException e)
             {
-                System.Diagnostics.Trace.WriteLine($"Error de timeout: {e}");
+                //System.Diagnostics.Trace.WriteLine($"Error de timeout: {e}");
                 throw new ApiException($"Error de timeout: {e}");
             }
             catch (Exception e)
             {
-                System.Diagnostics.Trace.WriteLine($"Error: {e}");
+                //System.Diagnostics.Trace.WriteLine($"Error: {e}");
                 throw new ApiException($"Error: {e}");
             }
         }

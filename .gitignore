@@ -7,7 +7,8 @@ libredte/obj/
 libredte/packages/
 libredte/Program.cs
 libredte/nuget.exe
-libredte/libredtecsharp.1.0.0.nupkg
+libredte/*.nupkg
+libredte/*.nuspec
 
 # Archivos de tests
 tests/TestEnv.cs

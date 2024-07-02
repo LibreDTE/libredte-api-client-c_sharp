@@ -2,10 +2,10 @@
 
 Enlaces sujetos a cambios.
 
-[![NuGet version](https://img.shields.io/nuget/v/libredtecsharp.svg)](https://www.nuget.org/packages/libredtecsharp/)
-[![NuGet downloads](https://img.shields.io/nuget/dt/libredtecsharp.svg)](https://www.nuget.org/packages/libredtecsharp/)
+[![NuGet version](https://img.shields.io/nuget/v/libredte.svg)](https://www.nuget.org/packages/libredte/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/libredte.svg)](https://www.nuget.org/packages/libredte/)
 
-Cliente para realizar la integración con los servicios web de `LibreDTE <https://www.libredte.cl>`_ desde Python.
+Cliente para realizar la integración con los servicios web de [LibreDTE](https://www.libredte.cl) desde Python.
 
 ## Instalación y actualización
 
@@ -88,5 +88,5 @@ Enlaces
 
 - [Sitio web LibreDTE](https://www.libredte.cl).
 - [Código fuente en GitHub](https://github.com/libredte/libredte-api-client-csharp).
-- [Paquete en NuGet](https://www.nuget.org/packages/libredtecsharp).
+- [Paquete en NuGet](https://www.nuget.org/packages/libredte).
 - [Documentación en Read the Docs](https://libredte.readthedocs.io/es/latest).

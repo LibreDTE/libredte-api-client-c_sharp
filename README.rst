@@ -3,11 +3,11 @@ LibreDTE: Cliente de API en C#
 
 Enlaces sujetos a cambios.
 
-.. image:: https://img.shields.io/nuget/v/libredtecsharp.svg
-    :target: https://www.nuget.org/packages/libredtecsharp/
+.. image:: https://img.shields.io/nuget/v/libredte.svg
+    :target: https://www.nuget.org/packages/libredte/
     :alt: NuGet version
-.. image:: https://img.shields.io/nuget/dt/libredtecsharp.svg
-    :target: https://www.nuget.org/packages/libredtecsharp/
+.. image:: https://img.shields.io/nuget/dt/libredte.svg
+    :target: https://www.nuget.org/packages/libredte/
     :alt: NuGet downloads
 
 Cliente para realizar la integración con los servicios web de `LibreDTE <https://www.libredte.cl>`_ desde Python.
@@ -99,5 +99,5 @@ Enlaces
 
 - `Sitio web LibreDTE <https://www.libredte.cl>`_.
 - `Código fuente en GitHub <https://github.com/libredte/libredte-api-client-csharp>`_.
-- `Paquete en NuGet <https://www.nuget.org/packages/libredtecsharp>`_.
+- `Paquete en NuGet <https://www.nuget.org/packages/libredte>`_.
 - `Documentación en Read the Docs <https://libredte.readthedocs.io/es/latest>`_.

@@ -18,7 +18,7 @@ namespace tests
             TestEnv test_env = new TestEnv();
             test_env.SetVariablesDeEntorno();
             // Variables de entorno definidas desde test_env
-            string rut = Environment.GetEnvironmentVariable("TEST_EMISOR_DTE");
+            string rut = Environment.GetEnvironmentVariable("TEST_RUT_COBRO");
             Dictionary<string, object> cobro = new Dictionary<string, object>() // CONFIGURAR EL DICCIONARIO
             {
                 {"codigo", null},

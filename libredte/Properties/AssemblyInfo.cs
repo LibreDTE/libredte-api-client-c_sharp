@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
 [assembly: AssemblyTitle("libredte")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Cliente para realizar la integración con los servicios web de LibreDTE desde C#.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("libredte")]
+[assembly: AssemblyCompany("LibreDTE")]
+[assembly: AssemblyProduct("LibreDTE API Client C#")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
