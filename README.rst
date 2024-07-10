@@ -36,7 +36,7 @@ Instalación desde la línea de comandos (cmd)
 2.  Ejecuta el siguiente comando para instalar `libredte`:
 
 .. code:: shell
-   nuget install libredtecsharp
+   nuget install libredte
 
 Autenticación en LibreDTE
 -------------------------
@@ -47,7 +47,7 @@ la cual será reconocida automáticamente por el cliente:
 
 .. code:: shell
 
-    export LIBREDTE_HASH="aquí-tu-hash-de-usuario"
+    set LIBREDTE_HASH="aquí-tu-hash-de-usuario"
 
 Si no se desea usar una variable de entorno, al instanciar los objetos se
 deberá indicar el hash del usuario. Ejemplo:

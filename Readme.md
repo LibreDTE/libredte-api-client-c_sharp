@@ -22,7 +22,7 @@ Cliente para realizar la integración con los servicios web de [LibreDTE](https:
 2. Ejecuta el siguiente comando para instalar `libredte`:
 
 ```sh
-nuget install libredtecsharp
+nuget install libredte
 ```
 
 ### Autenticación en LibreDTE
@@ -31,7 +31,7 @@ Lo más simple, y recomendado, es usar una variable de entorno con el [hash del 
 
 ```sh
 
-    export LIBREDTE_HASH="aquí-tu-hash-de-usuario"
+    set LIBREDTE_HASH="aquí-tu-hash-de-usuario"
 
 ```
 
